@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="height: auto;">
+    <head>
+        <title>SuperRPG-Fit</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- <script src="../js/registroPac.js"></script> -->
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Super RPG-Fit</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="page-container" id="cuadro">
+                <div class="container" style="padding-bottom: 20px;">
+                    <h1 style="text-align: center;">¡Bienvenido!<br> por favor ingrese sus datos</h1>
+                    <div class="align-cont-spacing" >
+                        <div class="cont-spacing" style="width: calc(50vw - 30px);float:left;">
+                            <h4>Nombre(s):</h4>
+                            <h4>Apellido Paterno:</h4>
+                            <h4>Apellido Materno:</h4>
+                            <h4>Edad:</h4>
+                            <h4>Fecha de Nacimiento:</h4>
+                            <h4>Dirección:</h4>
+                            <h4>Sexo:</h4>
+                            <h4>Enfermedad:</h4>
+                            <h4>ID del Doctor:</h4>
+                            <h4>Correo:</h4>
+                            <h4>Contraseña:</h4>
+                        </div>
+                        <div class="cont-spacing" style="width: calc(50vw - 30px);float: left;">
+                            <form id="pacRegistro" action="http://localhost:5500/api/paciente/guardar" method="POST">
+                                <input type="text"      class="txtdos" name="Nombres"></input>
+                                <input type="text"      class="txtdos" name="ApellidoP"></input>
+                                <input type="text"      class="txtdos" name="ApellidoM"></input>
+                                <input type="number"    class="txtdos" name="Edad"></input>
+                                <input type="date"      class="txtdos" name="FechaDeNacimiento"></input>
+                                <input type="text"      class="txtdos" name="Direccion"></input>
+                                <input type="text"      class="txtdos" name="Sexo"></input>
+                                <input type="text"      class="txtdos" name="Enfermedad"></input>
+                                <input type="number"    class="txtdos" name="IDDoctor"></input>
+                                <input type="text"      class="txtdos" name="NombreDeUsuario"></input>
+                                <input type="text"      class="txtdos" name="Contraseña"></input>
+                                <button type="submit"   class="btn1" style="width: auto; margin-bottom: 50px;">Registrarse</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Super RPG-Fit</li>
+            </ul>
+        </footer>
+    </body>
+</html>

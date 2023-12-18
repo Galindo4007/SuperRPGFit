@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html style="height: auto;">
+    <head>
+        <title>SuperRPG-Fit</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="../css/style.css"> -->
+        <link rel="stylesheet" href="../css/estilo.css">
+        <script src="../js/Login.js"></script>
+        <script>
+            function initDoc(){
+                document.getElementById("cuadro").innerHTML =  
+                    "<img src='../img/DoctorBanner.png' class='banner'>" +
+                    "<div class='container-reload'>" +
+                        "<div class='vertical-center'>" +
+                            "<h1 id='sesionDoc'>Inicio de Sesion de Doctor: </h1>" + 
+                            "<div class='horizontal-center'>" +
+                                "<div class='cont-tres'>" + 
+                                    "<h2>Cuenta:</h2> <br>" +
+                                    "<h2>Contraseña:</h2>" + 
+                                "</div>" + 
+                                "<div class='cont-cuatro'>" + 
+                                    "<input type='text' class='txt' id='usuario'></input><br>" + 
+                                    "<input type='password' class='txt' id='contrasena'></input>" + 
+                                "</div>" +  
+                            "</div>" +
+                            "<div class='cont'>" + 
+                                "<button class='btn1' onclick='swDoc()'>Iniciar sesion</button>" + 
+                            "</div>" + 
+                            "<div class='cont'>" +
+                                "<h3>¿No tienes cuenta? ¡Registrate!</h3>" +
+                                "<div class='cont'>" +
+                                    "<button class='btn1' onclick='crearSesDoc()'>Crear cuenta</button>" + 
+                                "</div>"
+                            "</div>" +
+                        "</div>" +
+                    "</div>";
+            }
+            function initPac(){
+                document.getElementById("cuadro").innerHTML =  
+                    "<img src='../img/DoctorBanner.png' class='banner'>" +
+                    "<div class='container-reload'>" +
+                        "<div class='vertical-center'>" +
+                            "<h1 id='sesionPac'>Inicio de Sesion de Paciente: </h1>" + 
+                            "<div class='horizontal-center'>" +
+                                "<div class='cont-tres'>" + 
+                                    "<h2>Cuenta:</h2> <br>" +
+                                    "<h2>Contraseña:</h2>" + 
+                                "</div>" + 
+                                "<div class='cont-cuatro'>" + 
+                                    "<input type='text' class='txt' id='usuario'></input><br>" + 
+                                    "<input type='password' class='txt' id='contrasena'></input>" + 
+                                "</div>" +  
+                            "</div>" +  
+                            "<div class='cont'>" + 
+                                "<button class='btn1' onclick='swPac()'>Iniciar sesion</button>" + 
+                            "</div>" + 
+                            "<div class='cont'>" +
+                                "<h3>¿No tienes cuenta? ¡Registrate!</h3>" +
+                                "<div class='cont'>" +
+                                    "<button class='btn1' onclick='crearSesPac()'>Crear cuenta</button>" + 
+                                "</div>"
+                            "</div>" +
+                        "</div>" +
+                    "</div>";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Super RPG-Fit</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="cuadro">
+            <img src="../img/DoctorBanner.png" class="banner">
+            <div class="container">
+                <div class="vertical-center">
+                    <div class="cont-uno">
+                        <h1>
+                            Para poder ingresar, seleccione su tipo de cuenta: 
+                        </h1>
+                    </div>
+                    <div class="cont-dos">
+                        <ul>
+                            <li><button class="btn1" onclick="initDoc()" style="margin-top: 0px;">Doctor</button></li>
+                            <li><button class="btn1" onclick="initPac()">Paciente</button></li>
+                        </ul>                    
+                    </div>
+                </div>
+            </div>
+            <img src="../img/fondo.png" class="fondo">
+        </main>
+        <footer>
+            <ul>
+                <li>Super RPG-Fit</li>
+            </ul>
+        </footer>
+    </body>
+</html>

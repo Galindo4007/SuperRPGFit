@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html style="height: auto;">
+    <head>
+        <title>SuperRPG-Fit</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/PacienteDoctorId.js"></script>
+        <script src="../js/Logout.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Super RPG-Fit</h1></a>
+            <nav>
+                <ul>
+                    <li><a style="cursor: pointer;" onclick="cerrarSes()">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="page-container" id="cerrar">
+                <div class="cont" style="padding: 20px 15px;">                
+                    <h1 style="text-align: center;">Bienvenido Doctor</h1>
+                    <h2 style="line-height: 40px;">Para iniciar, seleccione un paciente: </h2>
+                    <div class="cont">
+                        <select class="selec" name="Paciente" id="celdaPac"></select>
+                    </div>
+                    <div class="cont">
+                        <button class="btn1" onclick="getPac()" style="width: auto; float: none; display: block; margin: 15px auto;">Actualizar</button>
+                    </div>
+                    <table class="vertical-table">
+                        <tbody>
+                            <caption id="nomCompleto">
+                                Nombre
+                            </caption>
+                            <tr>
+                                <td>
+                                    <p>Edad:</p>
+                                </td>
+                                <td>
+                                    <p id="edad"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Enfermedad:</p>
+                                </td>
+                                <td>
+                                    <p id="enfermedad"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Comida:</p>
+                                </td>
+                                <td>
+                                    <p id="comida"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Agua:</p>
+                                </td>
+                                <td>
+                                    <p id="agua"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Sueño:</p>
+                                </td>
+                                <td>
+                                    <p id="sueno"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Medicina:</p>
+                                </td>
+                                <td>
+                                    <p id="med"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Ejercicio:</p>
+                                </td>
+                                <td>
+                                    <p id="ej"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="horizontal-table"></table>
+                </div>  
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Super RPG-Fit</li>
+            </ul>
+        </footer>
+    </body>
+</html>
